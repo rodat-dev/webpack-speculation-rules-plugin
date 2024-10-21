@@ -55,4 +55,4 @@ class SpeculationRulesPlugin {
     }
 }
 
-export { SpeculationRulesPlugin };
+export default SpeculationRulesPlugin;
