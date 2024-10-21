@@ -41,7 +41,7 @@ class SpeculationRulesPlugin {
                 stage: Compilation.PROCESS_ASSETS_STAGE_ADDITIONS
             },
             (_assets) => {
-                const speculationRulesPath = nodePath.resolve(process.cwd(), "speculationrules.js");
+                const speculationRulesPath = nodePath.resolve(__dirname, "speculationrules.js");
                 const content = fs.readFileSync(speculationRulesPath, { encoding: "utf-8" });
                 content.replace("process.env.__SPECULATION_RULES", JSON.stringify(this.rules, null, "\t"));
 
@@ -55,4 +55,4 @@ class SpeculationRulesPlugin {
     }
 }
 
-export default SpeculationRulesPlugin;
+export { SpeculationRulesPlugin };
