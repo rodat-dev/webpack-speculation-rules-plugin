@@ -1,1 +1,1 @@
-export * from "./webpack-speculation-rules-plugin";
+export { default } from "./webpack-speculation-rules-plugin";
