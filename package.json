@@ -1,0 +1,31 @@
+{
+  "name": "@rodat.dev/webpack-speculation-rules-plugin",
+  "version": "1.0.0",
+  "module": "./lib/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "exports": {
+    "./speculationrules": "./dist/speculationrules.js",
+    "./webpack-speculation-rules-plugin": "./dist/webpack-speculation-rules-plugin.js"
+  },
+  "keywords": ["webpack", "speculation", "rules", "performance", "chrome", "google", "web", "browser"],
+  "author": "Tomas Roda <rodat.dev@proton.me>",
+  "license": "MIT",
+  "description": "A webpack plugin to add speculation rules to the bundling process.",
+  "devDependencies": {
+    "@types/node": "^22.7.7",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^5.6.2",
+    "webpack": "^5.95.0"
+  },
+  "directories": {
+    "lib": "lib"
+  }
+}
