@@ -1,6 +1,6 @@
 {
   "name": "@rodat.dev/webpack-speculation-rules-plugin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "module": "lib/index.ts",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,7 +11,7 @@
   "exports": {
     "./speculationrules": "./dist/speculationrules.js",
     "./webpack-speculation-rules-plugin": "./dist/webpack-speculation-rules-plugin.js",
-    ".": "./dist/webpack-speculation-rules-plugin.js"
+    ".": "./dist/index.js"
   },
   "keywords": ["webpack", "speculation", "rules", "performance", "chrome", "google", "web", "browser"],
   "author": "Tomas Roda <rodat.dev@proton.me>",
